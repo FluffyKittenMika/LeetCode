@@ -1,0 +1,23 @@
+
+//slower no string version
+public bool IsPalindrome(int x) {
+        string s = "" + x;
+        char[] array = s.ToCharArray();
+        Array.Reverse(array);
+        string sr = new string(array);
+        if (s == sr)
+            return true;
+        return false;
+    }
+
+
+//faster string version
+  public bool IsPalindrome(int x) {
+      string s = "" + x;
+      char[] array = s.ToCharArray();
+      Array.Reverse(array);
+      string sr = new string(array);
+      if (s == sr)
+          return true;
+      return false;
+  }
